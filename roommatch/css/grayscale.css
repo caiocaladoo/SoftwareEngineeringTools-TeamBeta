@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/buildings.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -310,8 +310,16 @@ a:focus {
     background-color: transparent;
 }
 
+.btn-index{
+    border: 1px solid #42dca3;
+    color: white;
+    background-color: #42dca3;
+}
+
 .btn-default:hover,
-.btn-default:focus {
+.btn-default:focus,
+.btn-index:hover, 
+.btn-index:focus {
     border: 1px solid #42dca3;
     outline: 0;
     color: #000;
