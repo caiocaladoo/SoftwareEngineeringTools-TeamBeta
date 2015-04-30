@@ -79,7 +79,6 @@
     
 } 
 
-
 .scrolling li {
     display: inline; 
     width: 4em;
@@ -92,5 +91,80 @@
 
 .scrolling a:hover {
     color: rgba(204, 204, 204, 0.7);
+}
+
+<!-- new layout -->
+
+
+.user-item {
+    background-color: blue;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.item{
+    position: relative;
+}
+
+.nome{
+    margin-left: 15px;
+    text-align: left;
+    font-size: 28px;
+}
+
+.personalInfo{
+    margin-left: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.infoBar{
+    height: 48px;
+    width: 350px;
+    margin-top: 30px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #BDBDBD;
+    position: relative;
+}
+
+.user-pic-div{
+    position: absolute; 
+    margin-left: 15px;
+    margin-top: -30px;
+    
+}
+
+.user-pic {
+    text-align: left;
+    width: 64px;
+    margin: 0 auto;
+    
+}
+
+.user-list-menu{
+    position: absolute;
+    right: 15px;
+    margin-top: 10px;
+}
+
+.user-background {   
+    z-index: -100;   
+    width: 350px;
+    height: 100%;  
+    position: absolute;
+    top: 0;
+    background-color: #E7E7E7;   
+    border-radius: 5px 5px 5px 5px;
+}
+
+a.list-btn:focus, a.list-btn:hover{
+    color: #e5e5e5;
+}
+
+a.list-btn{
+    color: black;
 }
 
