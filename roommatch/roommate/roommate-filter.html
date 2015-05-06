@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Roommatch prototype">
+    <meta name="author" content="Team Beta">
+
+    <title>Roommatch | Roomate</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/grayscale.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+<!--    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-building"></i>  <span class="light">Room</span  > match | <span style="font-weight:400; color: #CCCCCC;"> Roomate</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a class="page-scroll" href=""><i class="fa fa-circle fa-lg"></i> Tracy Robinson</a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-bars fa-fw"></i>
+</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../housing/"><i class="fa fa-bed fa-fw"></i> Housing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> Favorites</a></li>
+                            <li><a href="#"><i class="fa fa-envelope fa-fw"></i> Messages</a></li>
+                            <li><a href="#"><i class="fa fa-info fa-fw"></i> Personal Info</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../"><i class="fa fa-sign-out fa-fw"></i>Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <br>
+                <!-- display filters here -->
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+   <section class="container content-section text-center">
+       <table align="center">
+       <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 item text-left filter">
+
+
+                <!-- IVE NEVER DONE JS OR BOOTSTRAP BEFORE AND I DON'T KNOW WHERE ANYTHING IS...SO IF YOU WANT TO CHANGE THE STYLE OF THIS
+                PLEASE DO SO... OF IF THERE'S ANYTHING THAT'S WRONG PLEASE CORRECT...I WAS JUST CREATING THE STRUCTURE...
+                I WOULD LIKE THAT BECAUSE IT LOOKS UGLY AND DOESN'T FOLLOW WHAT WE WANT. THANKS! -->
+                
+                <!-- FILTER-->
+                <div class="input-prepend input-append">
+                    <td width="105" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Gender
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> Male</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> Female</a></li>                                            
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="130" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Age Range
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 18-20</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> 21-25</a></li>  
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 26-30</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> 31-35</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> 36-40</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> 41+</a></li>                                        
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="72" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Pet
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> Yes</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> No</a></li>                                                               
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="105" align="center">
+                    <a href="#" class="btn btn-default btn-lg" >Filter</a>
+                    </td>
+                </div>
+            </div>
+        </div>
+        </table>
+            
+            <br>
+            <div class="row">
+                
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Ellon Musk</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/elon-small.png">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+                
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Tim McVicker</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/tim-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+                
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Caio Calado</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/caio-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Alexander Beethoven</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/alexander-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Alan Robertson</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/alan-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>James Woodward</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/james-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Miguel Lopez</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/miguel-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+            </div>
+            
+            
+            
+            
+        </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; TeamBeta 2015</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/grayscale.js"></script>
+
+     <!-- Custom Filter JavaScript -->
+    <script src="../js/controller.js"></script>
+
+</body>
+
+</html>

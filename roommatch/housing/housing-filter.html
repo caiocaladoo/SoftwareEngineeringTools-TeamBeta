@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Roommatch prototype">
+    <meta name="author" content="Team Beta">
+
+    <title>Roommatch | Housing</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/grayscale.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+<!--    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-building"></i>  <span class="light">Room</span  > match | <span style="font-weight:400; color: #CCCCCC;"> Housing</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a class="page-scroll" href=""><i class="fa fa-circle fa-lg"></i> Tracy Robinson</a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-bars fa-fw"></i>
+</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../roommate/"><i class="fa fa-users fa-fw"></i> Roomates</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> Favorites</a></li>
+                            <li><a href="#"><i class="fa fa-envelope fa-fw"></i> Messages</a></li>
+                            <li><a href="#"><i class="fa fa-info fa-fw"></i> Personal Info</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../"><i class="fa fa-sign-out fa-fw"></i>Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <br>
+                <!-- display filters here -->
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+   <section class="container content-section">
+       <table align="center">
+       <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 item text-left filter">                
+        
+
+                <!-- IVE NEVER DONE JS OR BOOTSTRAP BEFORE AND I DON'T KNOW WHERE ANYTHING IS...SO IF YOU WANT TO CHANGE THE STYLE OF THIS
+                PLEASE DO SO... OF IF THERE'S ANYTHING THAT'S WRONG PLEASE CORRECT...I WAS JUST CREATING THE STRUCTURE...
+                I WOULD LIKE THAT BECAUSE IT LOOKS UGLY AND DOESN'T FOLLOW WHAT WE WANT. THANKS! -->
+                
+                <!-- FILTER-->
+                <div class="input-prepend input-append">
+                    <td width="145" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Home Types
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> House</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> Apartment</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> Both</a></li>                                            
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="140" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Price Range
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> $100-500</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> $500-1000</a></li>  
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> $1000-1500</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> $1500-2000</a></li>
+                            <li><a href="#"><i class="fa fa-star fa-fw"></i> $2000+</a></li>                                         
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="85" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Bed
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 1</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 2</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 3</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 4</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 5+</a></li>                                                                     
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="80" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Bath
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 1</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 2</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 3+</a></li>                                                                    
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="155" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">SQ. FT. Range
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 0-500</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 500-1000</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 1000-1500</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 1500-2000</a></li> 
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> 2000+</a></li>                                                                   
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="70" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Pet
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> Yes</a></li>
+                            <li><a href="#"><i class="fa fa-street-view fa-fw"></i> No</a></li>                                                               
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="105" align="center">
+                    <a href="#" class="btn btn-default btn-lg" ><span class="network-name">Filter</span></a>
+                    </td>
+                    
+                </div>  
+            </div>
+        </div> 
+        </table>
+          
+
+ 
+        <div class="row">
+
+            <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                <div class='user-item'>
+                    <div class='nome'>318 W 7th St #4</div>
+                    <div class='infoBar'>
+                        <div class="user-pic-div">
+                            <img class="img-circle user-pic" src="../img/housing/318-W-small">
+                        </div>
+                        <div class='user-list-menu'>
+                            <ul class="list-inline">
+                                <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-background"></div>
+            </div>
+
+            <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                <div class='user-item'>
+                    <div class='nome'>1406 W 7th St</div>
+                    <div class='infoBar'>
+                        <div class="user-pic-div">
+                            <img class="img-circle user-pic" src="../img/housing/1406-W-small.jpg">
+                        </div>
+                        <div class='user-list-menu'>
+                            <ul class="list-inline">
+                                <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-background"></div>
+            </div>
+
+            <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                <div class='user-item'>
+                    <div class='nome'>1105 Hobart St</div>
+                    <div class='infoBar'>
+                        <div class="user-pic-div">
+                            <img class="img-circle user-pic" src="../img/housing/1105-Hobart-small.jpg">
+                        </div>
+                        <div class='user-list-menu'>
+                            <ul class="list-inline">
+                                <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-background"></div>
+            </div>
+
+            <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                <div class='user-item'>
+                    <div class='nome'>815 Pomona Ave #20</div>
+                    <div class='infoBar'>
+                        <div class="user-pic-div">
+                            <img class="img-circle user-pic" src="../img/housing/815-Pomona-small.jpg">
+                        </div>
+                        <div class='user-list-menu'>
+                            <ul class="list-inline">
+                                <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-background"></div>
+            </div>
+
+            <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                <div class='user-item'>
+                    <div class='nome'>643 W 4th Ave #2</div>
+                    <div class='infoBar'>
+                        <div class="user-pic-div">
+                            <img class="img-circle user-pic" src="../img/housing/643-W-small.jpg">
+                        </div>
+                        <div class='user-list-menu'>
+                            <ul class="list-inline">
+                                <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-background"></div>
+            </div>
+
+            <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                <div class='user-item'>
+                    <div class='nome'>1118 Nord Ave #5</div>
+                    <div class='infoBar'>
+                        <div class="user-pic-div">
+                            <img class="img-circle user-pic" src="../img/housing/1118-Nord-small.jpg">
+                        </div>
+                        <div class='user-list-menu'>
+                            <ul class="list-inline">
+                                <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-background"></div>
+            </div>
+
+
+
+<!-- 
+            <div class="col-lg-4 col-sm-6 col-xs-12 item">
+                <div class='user-info' style="background: url(../img/housing/house1.jpg) no-repeat center center;">
+                    <div class="info">
+                        <div class="name">Nord Appartments</div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12 item">
+                <div class='user-info' style="background: url(../img/housing/housing01.jpg) no-repeat center center;">
+                    <div class="info">
+                        <div class="name">Nord Appartments</div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12 item">
+                <div class='user-info' style="background: url(../img/housing/housing02.jpg) no-repeat center center;">
+                    <div class="info">
+                        <div class="name">Nord Appartments</div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6 col-xs-12 item">
+                <div class='user-info' style="background: url(../img/housing/housing03.jpg) no-repeat center center;">
+                    <div class="info">
+                        <div class="name">Nord Appartments</div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12 item">
+                <div class='user-info' style="background: url(../img/housing/housing04.jpg) no-repeat center center;">
+                    <div class="info">
+                        <div class="name">Nord Appartments</div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12 item">
+                <div class='user-info' style="background: url(../img/housing/housing05.jpg) no-repeat center center;">
+                    <div class="info">
+                        <div class="name">Nord Appartments</div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12 item">
+                <div class='user-info' style="background: url(../img/housing/housing06.jpg) no-repeat center center;">
+                    <div class="info">
+                        <div class="name">Nord Appartments</div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+          </div>  
+-->
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; TeamBeta 2015</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/grayscale.js"></script>
+
+    <!-- Custom Filter JavaScript -->
+    <script src="../js/controller.js"></script>
+
+</body>
+
+</html>

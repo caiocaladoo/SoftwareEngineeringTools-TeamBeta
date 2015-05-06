@@ -81,38 +81,58 @@
     </nav>
 
    <section class="container content-section text-center">
+       <table align="center">
        <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12 item text-left filter">
-                <br><br>
-                <ul class="list-inline">
-                    <!-- FILTER-->
-                    <li class="dropdown">
-                        <a href="roommate/" class="btn btn-default btn-lg" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-filter fa-fw"></i> <span class="network-name">Filter</span></a>
-<!--
+
+                <br>
+                
+                <!-- FILTER-->
+                <div class="input-prepend input-append">
+                    <td width="105" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Gender
+                        <span class="caret"></span>
+                        </button>                        
                         <ul class="dropdown-menu">
-                            <li><a href="../roommate/"><i class="fa fa-users fa-fw"></i> Roomates</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"><i class="fa fa-star fa-fw"></i> Favorites</a></li>
-                            <li><a href="#"><i class="fa fa-envelope fa-fw"></i> Messages</a></li>
-                            <li><a href="#"><i class="fa fa-info fa-fw"></i> Personal Info</a></li>
-                            <li class="divider"></li>
-                            <li><a href="../"><i class="fa fa-sign-out fa-fw"></i>Log out</a></li>
+                            <li><a href="#"><i class="fa fa-male fa-fw"></i> Male</a></li>
+                            <li><a href="#"><i class="fa fa-female fa-fw"></i> Female</a></li>                                            
                         </ul>
--->
-                        
-                    </li>
-                    <!-- SORT-->
-                    <li class="dropdown">
-                        <a href="roommate/" class="btn btn-default btn-lg" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-sort fa-fw"></i> <span class="network-name">Sort</span></a>
+                    </div>
+                    </td>
+                    <td width="130" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Age Range
+                        <span class="caret"></span>
+                        </button>                        
                         <ul class="dropdown-menu">
-                            <li><a href="#"><i class="fa fa-venus-mars fa-fw"></i> Gender</a></li>
-                            <li><a href="#"><i class="fa fa-users fa-fw"></i> Age</a></li>
+                            <li><a href="#">18-20</a></li>
+                            <li><a href="#">21-25</a></li>  
+                            <li><a href="#">26-30</a></li>
+                            <li><a href="#">31-35</a></li>
+                            <li><a href="#">36-40</a></li>
+                            <li><a href="#">41+</a></li>                                        
                         </ul>
-                        
-                    </li>
-                </ul>
+                    </div>
+                    </td>
+                    <td width="72" align="center">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">Pet
+                        <span class="caret"></span>
+                        </button>                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Yes</a></li>
+                            <li><a href="#">No</a></li>                                                               
+                        </ul>
+                    </div>
+                    </td>
+                    <td width="105" align="center">
+                    <a href="roommate-filter.html" class="btn btn-default btn-lg" >Filter</a>
+                    </td>
+                </div>
             </div>
         </div>
+        </table>
             
             <br>
             <div class="row">
@@ -120,14 +140,15 @@
                 <div class='col-lg-4 col-sm-6 col-xs-12 item'>
                     <div class='user-item'>
                         <div class='nome'>João Guilherme</div>
+                        <div class='detailInfo'>22, Male, No pets, hygienic, $250, Libra, non-smoking</div>
                         <div class='infoBar'>
                             <div class="user-pic-div">
                                 <img class="img-circle user-pic" src="../img/users/jose-small.jpg">
                             </div>
                             <div class='user-list-menu'>
                                 <ul class="list-inline">
-                                    <li><a class='list-btn'  href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                                    <li><a class='list-btn' href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -138,14 +159,15 @@
                 <div class='col-lg-4 col-sm-6 col-xs-12 item'>
                     <div class='user-item'>
                         <div class='nome'>Ellon Musk</div>
+                        <div class='detailInfo'>Male, Pets, hygienic, $500, Capricorn, non-smoking</div>
                         <div class='infoBar'>
                             <div class="user-pic-div">
                                 <img class="img-circle user-pic" src="../img/users/elon-small.png">
                             </div>
                             <div class='user-list-menu'>
                                 <ul class="list-inline">
-                                    <li><a class='list-btn'  href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                                    <li><a class='list-btn' href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -156,14 +178,15 @@
                 <div class='col-lg-4 col-sm-6 col-xs-12 item'>
                     <div class='user-item'>
                         <div class='nome'>Tracy & Kayla</div>
+                        <div class='detailInfo'>19, Female, pets, unhygienic, $200, NA, non-smoking</div>
                         <div class='infoBar'>
                             <div class="user-pic-div">
                                 <img class="img-circle user-pic" src="../img/users/tracyKayla-small.jpg">
                             </div>
                             <div class='user-list-menu'>
                                 <ul class="list-inline">
-                                    <li><a class='list-btn'  href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                                    <li><a class='list-btn' href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -174,14 +197,15 @@
                 <div class='col-lg-4 col-sm-6 col-xs-12 item'>
                     <div class='user-item'>
                         <div class='nome'>Tim McVicker</div>
+                        <div class='detailInfo'>30, Male, no pets, hygienic, $400, Capricorn, non-smoking</div>
                         <div class='infoBar'>
                             <div class="user-pic-div">
                                 <img class="img-circle user-pic" src="../img/users/tim-small.jpg">
                             </div>
                             <div class='user-list-menu'>
                                 <ul class="list-inline">
-                                    <li><a class='list-btn'  href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                                    <li><a class='list-btn' href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -192,14 +216,15 @@
                 <div class='col-lg-4 col-sm-6 col-xs-12 item'>
                     <div class='user-item'>
                         <div class='nome'>Caio Calado</div>
+                        <div class='detailInfo'>Male, pets, hygienic, $400, Cancer, non-smoking</div>
                         <div class='infoBar'>
                             <div class="user-pic-div">
                                 <img class="img-circle user-pic" src="../img/users/caio-small.jpg">
                             </div>
                             <div class='user-list-menu'>
                                 <ul class="list-inline">
-                                    <li><a class='list-btn'  href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                                    <li><a class='list-btn' href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -210,14 +235,15 @@
                 <div class='col-lg-4 col-sm-6 col-xs-12 item'>
                     <div class='user-item'>
                         <div class='nome'>Shaila Yoder</div>
+                        <div class='detailInfo'>22, Female, Pets, unhygienic, $250, Libra, smoking</div>
                         <div class='infoBar'>
                             <div class="user-pic-div">
                                 <img class="img-circle user-pic" src="../img/users/shaila-small.png">
                             </div>
                             <div class='user-list-menu'>
                                 <ul class="list-inline">
-                                    <li><a class='list-btn'  href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                                    <li><a class='list-btn' href="mailto:timsays@gmail.com" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -225,7 +251,293 @@
                     <div class="user-background"></div>
                 </div>
 
-              </div>
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Mathew Gardner</div>
+                        <div class='detailInfo'>25, Male, Pets, Unhygienic, $425, Gemini, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/matt-small.png">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Brenna Bartell</div>
+                        <div class='detailInfo'>18, Female, No pets, Unhygienic, $320, Cancer, smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/brenna-small.png">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Cassidy Anderson</div>
+                        <div class='detailInfo'>23, Female, Pets, Hygienic, $340, Taurus, smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/cassidy-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Alexander Beethoven</div>
+                        <div class='detailInfo'>28, Male, Pets, Hygienic, $400, Sagittarius, smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/alexander-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Eric Perpetua</div>
+                        <div class='detailInfo'>Male, No pets, unhygienic, $300, Gemini, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/eric-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Giselle Porter</div>
+                        <div class='detailInfo'>Female, Pets, Hygienic, $350, Aquarius, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/giselle-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Taylor Lusk</div>
+                        <div class='detailInfo'>24, Female, Pets, Unhygienic, $300, Scorpio, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/taylor-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Alan Robertson</div>
+                        <div class='detailInfo'>30, Male, No pets, hygienic, $450, Libra, smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/alan-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>James Woodward</div>
+                        <div class='detailInfo'>28 Male, No pets, hygienic, $500, Pisces, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/james-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Erin Childs</div>
+                        <div class='detailInfo'>20, Female, Pets, Hygienic, $450, Capricorn, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/erin-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Gabrielle Rivera</div>
+                        <div class='detailInfo'>25, Male, No pets, unhygienic, $375, Taurus, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/gabrielle-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Sabrina Pearl</div>
+                        <div class='detailInfo'>23, Female, Pets, Hygienic, $350, Aquarius, smoking</div>
+
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/sabrina-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Grace Knobler</div>
+                        <div class='detailInfo'>21, Female, Pets, Hygienic, $275, Cancer, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/grace-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Miguel Lopez</div>
+                        <div class='detailInfo'>27, Male, pets, hygienic, $400, Aries, smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/miguel-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+                <div class='col-lg-4 col-sm-6 col-xs-12 item'>
+                    <div class='user-item'>
+                        <div class='nome'>Greg White</div>
+                        <div class='detailInfo'>24, Male, No pets, Unhygienic, $300, Leo, non-smoking</div>
+                        <div class='infoBar'>
+                            <div class="user-pic-div">
+                                <img class="img-circle user-pic" src="../img/users/greg-small.jpg">
+                            </div>
+                            <div class='user-list-menu'>
+                                <ul class="list-inline">
+                                    <li><a class='list-btn'  href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                                    <li><a class='list-btn' href="#" target="_blank"><i class="fa fa-star fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-background"></div>
+                </div>
+
+            </div>
             
             
             
@@ -252,6 +564,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../js/grayscale.js"></script>
+
+     <!-- Custom Filter JavaScript -->
+    <script src="../js/controller.js"></script>
 
 </body>
 
